@@ -1,0 +1,239 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fc;
+    color: #1e293b;
+}
+
+.cabecalho {
+    background-color: white;
+    padding: 22px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+.cabecalho h2 {
+    color: #2563eb;
+    font-size: 22px;
+}
+
+.cabecalho span {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 70px auto;
+    padding: 0 25px;
+}
+
+.apresentacao {
+    background: linear-gradient(135deg, #1d4ed8, #3b82f6);
+    color: white;
+    padding: 65px 50px;
+    border-radius: 18px;
+}
+
+.etiqueta {
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #bfdbfe;
+}
+
+.apresentacao h1 {
+    font-size: 40px;
+    max-width: 600px;
+    margin: 20px 0;
+}
+
+.apresentacao p {
+    font-size: 16px;
+    line-height: 1.7;
+    max-width: 550px;
+    color: #e0ecff;
+}
+
+.botao {
+    margin-top: 28px;
+    padding: 14px 25px;
+    background-color: white;
+    color: #2563eb;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #dbeafe;
+    transform: translateY(-2px);
+}
+
+.informacoes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-top: 35px;
+}
+
+.cartao {
+    background-color: white;
+    padding: 28px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+    transition: 0.3s;
+}
+
+.cartao:hover {
+    transform: translateY(-5px);
+}
+
+.cartao h3 {
+    margin-bottom: 12px;
+    color: #2563eb;
+}
+
+.cartao p {
+    color: #64748b;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #94a3b8;
+    font-size: 13px;
+}
+
+@media (max-width: 700px) {
+
+    .cabecalho {
+        padding: 20px;
+    }
+
+    .cabecalho span {
+        font-size: 12px;
+    }
+
+    .container {
+        margin: 35px auto;
+    }
+
+    .apresentacao {
+        padding: 40px 25px;
+    }
+
+    .apresentacao h1 {
+        font-size: 29px;
+    }
+
+    .informacoes {
+        grid-template-columns: 1fr;
+    }
+}
+
+.formulario,
+.lista-agendamentos {
+    background: white;
+    padding: 30px;
+    margin-top: 35px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+}
+
+.formulario h2,
+.lista-agendamentos h2 {
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+.formulario p {
+    color: #64748b;
+    margin-bottom: 25px;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.formulario label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.formulario input,
+.formulario select {
+    padding: 13px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.formulario input:focus,
+.formulario select:focus {
+    outline: 2px solid #3b82f6;
+    border-color: transparent;
+}
+
+.formulario .botao {
+    background: #2563eb;
+    color: white;
+    width: fit-content;
+}
+
+.formulario .botao:hover {
+    background: #1d4ed8;
+}
+
+.agendamento {
+    border: 1px solid #e2e8f0;
+    padding: 18px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.agendamento p {
+    margin-top: 8px;
+    color: #64748b;
+}
+
+.botao-cancelar {
+    margin-top: 12px;
+    padding: 9px 15px;
+    border: none;
+    border-radius: 7px;
+    background: #fee2e2;
+    color: #b91c1c;
+    cursor: pointer;
+}
+
+.botao-cancelar:hover {
+    background: #fecaca;
+}
+
+@media (max-width: 700px) {
+    .formulario,
+    .lista-agendamentos {
+        padding: 20px;
+    }
+
+    .formulario .botao {
+        width: 100%;
+    }
+}

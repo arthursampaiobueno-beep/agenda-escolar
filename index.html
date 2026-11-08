@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Agenda Escolar</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <h2>Agenda Escolar</h2>
+        <span>Atendimento Pedagógico</span>
+    </header>
+
+    <main class="container">
+
+        <section class="apresentacao">
+            <span class="etiqueta">PLANEJE SEU ATENDIMENTO</span>
+
+            <h1>Organize seus horários de atendimento.</h1>
+
+            <p>
+                Agende seu atendimento pedagógico de maneira
+                simples, rápida e organizada.
+            </p>
+
+<button class="botao" id="abrirFormulario">
+    Novo agendamento
+</button>
+        </section>
+         
+<section class="formulario" id="formulario">
+    <h2>Novo agendamento</h2>
+    <p>Preencha os dados para solicitar seu atendimento.</p>
+
+    <form id="formAgendamento">
+
+        <label for="nome">Nome completo</label>
+        <input type="text" id="nome" required
+               placeholder="Digite seu nome">
+
+        <label for="turma">Turma</label>
+        <input type="text" id="turma" required
+               placeholder="Ex: 2º Ano A">
+
+        <label for="motivo">Motivo do atendimento</label>
+        <select id="motivo" required>
+            <option value="">Selecione um motivo</option>
+            <option value="Dúvidas escolares">Dúvidas escolares</option>
+            <option value="Dificuldades de aprendizagem">Dificuldades de aprendizagem</option>
+            <option value="Orientação pedagógica">Orientação pedagógica</option>
+            <option value="Outros assuntos">Outros assuntos</option>
+        </select>
+
+        <label for="data">Data desejada</label>
+        <input type="date" id="data" required>
+
+        <label for="horario">Horário</label>
+        <select id="horario" required>
+            <option value="">Selecione um horário</option>
+            <option value="08:00">08:00</option>
+            <option value="09:00">09:00</option>
+            <option value="10:00">10:00</option>
+            <option value="13:00">13:00</option>
+            <option value="14:00">14:00</option>
+            <option value="15:00">15:00</option>
+        </select>
+
+        <button type="submit" class="botao">
+            Confirmar agendamento
+        </button>
+
+    </form>
+</section>
+
+
+<section class="lista-agendamentos">
+    <h2>Meus agendamentos</h2>
+    <div id="listaAgendamentos">
+        <p>Nenhum agendamento realizado.</p>
+    </div>
+</section>
+
+
+        <section class="informacoes">
+
+            <div class="cartao">
+                <h3>📅 Agendamentos</h3>
+                <p>Organize seus atendimentos em um só lugar.</p>
+            </div>
+
+            <div class="cartao">
+                <h3>🎓 Atendimento</h3>
+                <p>Tenha mais facilidade para falar com a equipe pedagógica.</p>
+            </div>
+
+            <div class="cartao">
+                <h3>⏰ Organização</h3>
+                <p>Escolha seus horários de forma prática.</p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Agenda Escolar © 2026 - Projeto Integrador</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
